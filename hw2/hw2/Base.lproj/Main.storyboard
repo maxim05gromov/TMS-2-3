@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="hw2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N53-kA-FSv">
+                                <rect key="frame" x="0.0" y="362" width="393" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите день недели" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngV-Dg-hnj">
+                                        <rect key="frame" x="0.0" y="1" width="393" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="inS-8y-Hqo"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AHi-ps-ecj">
+                                        <rect key="frame" x="61" y="93" width="270" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="7ir-Qj-E5x"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Рассчет времени до выходных"/>
+                                        <connections>
+                                            <action selector="count" destination="BYZ-38-t0r" eventType="touchUpInside" id="L7B-cS-mCN"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bV5-si-Ep5">
+                                        <rect key="frame" x="49" y="47" width="295" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="JLu-Vs-vdU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="bV5-si-Ep5" firstAttribute="leading" secondItem="N53-kA-FSv" secondAttribute="leading" constant="49" id="29t-ah-gxP"/>
+                                    <constraint firstItem="AHi-ps-ecj" firstAttribute="top" secondItem="bV5-si-Ep5" secondAttribute="bottom" constant="12" id="5NE-La-O48"/>
+                                    <constraint firstItem="bV5-si-Ep5" firstAttribute="top" secondItem="ngV-Dg-hnj" secondAttribute="bottom" constant="8" symbolic="YES" id="78R-lX-SdG"/>
+                                    <constraint firstItem="AHi-ps-ecj" firstAttribute="leading" secondItem="N53-kA-FSv" secondAttribute="leading" constant="61" id="RPA-nn-41O"/>
+                                    <constraint firstAttribute="trailing" secondItem="bV5-si-Ep5" secondAttribute="trailing" constant="49" id="akL-q1-vL2"/>
+                                    <constraint firstAttribute="trailing" secondItem="ngV-Dg-hnj" secondAttribute="trailing" id="cUD-H9-3qO"/>
+                                    <constraint firstItem="ngV-Dg-hnj" firstAttribute="leading" secondItem="N53-kA-FSv" secondAttribute="leading" id="dJo-0k-flv"/>
+                                    <constraint firstItem="ngV-Dg-hnj" firstAttribute="top" secondItem="N53-kA-FSv" secondAttribute="top" constant="1" id="n9C-Ny-h5F"/>
+                                    <constraint firstAttribute="bottom" secondItem="AHi-ps-ecj" secondAttribute="bottom" id="r8p-V3-Jyg"/>
+                                    <constraint firstAttribute="trailing" secondItem="AHi-ps-ecj" secondAttribute="trailing" constant="62" id="tlg-0g-wPs"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="N53-kA-FSv" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="88c-lE-rFR"/>
+                            <constraint firstItem="N53-kA-FSv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aow-wv-tFP"/>
+                            <constraint firstItem="N53-kA-FSv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uyM-SP-1Oj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="ngV-Dg-hnj" id="kjh-0g-kYD"/>
+                        <outlet property="textField" destination="bV5-si-Ep5" id="anV-Mo-KS9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="35.877862595419849" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
